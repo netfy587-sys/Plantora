@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantora – A Practical Guide to Growing and Caring for Indoor Plants</title>
+<meta name="description" content="Plantora is an educational guide to indoor plant care: light, watering, soil, beginner-friendly plants, common problems and seasonal tips, explained in plain language.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
+<style>
+:root{--g9:#10301f;--g7:#1f5a3a;--g5:#3d8b5a;--g1:#eaf4ec;--sand:#f7f4ec;--ink:#1d2a22;--mut:#566559;--acc:#c9a24b;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--sand);line-height:1.75;font-size:18px}
+h1,h2,h3,nav,.btn,.tag,footer{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--g7)}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+header{background:var(--g9);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:14px;padding-bottom:14px}
+.logo{color:var(--w);font:700 24px 'Segoe UI',Arial,sans-serif;text-decoration:none;letter-spacing:.5px}
+.logo span{color:var(--acc)}
+nav a{color:#d7e8dc;text-decoration:none;margin-left:20px;font-size:15px}
+nav a:hover{color:var(--w)}
+.hero{position:relative;background:var(--g9) url('https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1800&q=70') center/cover;color:var(--w)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,48,31,.92),rgba(16,48,31,.55))}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:110px}
+.tag{display:inline-block;background:rgba(201,162,75,.2);color:#f0d99a;padding:5px 14px;border-radius:20px;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(34px,5.5vw,58px);line-height:1.15;max-width:780px;margin-bottom:20px}
+.hero p{max-width:640px;font-size:20px;color:#e3efe6;margin-bottom:30px}
+.btn{display:inline-block;background:var(--acc);color:var(--g9);padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:700;font-size:16px}
+.btn:hover{background:#dbb55f}
+section{padding:80px 0}
+section.alt{background:var(--w)}
+section.dark{background:var(--g1)}
+h2{font-size:clamp(28px,3.6vw,40px);color:var(--g9);line-height:1.2;margin-bottom:18px}
+h3{font-size:21px;color:var(--g7);margin:6px 0 8px}
+.lead{color:var(--mut);max-width:820px;margin-bottom:30px;font-size:19px}
+p+p{margin-top:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.two img,.card img{border-radius:10px;width:100%;object-fit:cover;background:var(--g1)}
+.two img{height:420px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--w);border-radius:12px;overflow:hidden;box-shadow:0 2px 14px rgba(16,48,31,.08)}
+.card img{height:210px;border-radius:0}
+.card div{padding:22px}
+.card p{font-size:16.5px;color:var(--mut)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:10px}
+.step{background:var(--w);border-left:5px solid var(--g5);padding:22px 24px;border-radius:8px;box-shadow:0 2px 10px rgba(16,48,31,.06)}
+.step p{font-size:17px;color:var(--mut)}
+.faq details{background:var(--w);border-radius:8px;padding:18px 22px;margin-bottom:14px;box-shadow:0 2px 10px rgba(16,48,31,.06)}
+.faq summary{cursor:pointer;font:600 18px 'Segoe UI',Arial,sans-serif;color:var(--g9)}
+.faq details p{margin-top:12px;color:var(--mut);font-size:17px}
+.note{background:#fff8e6;border:1px solid #ecd9a0;border-radius:10px;padding:26px 28px}
+.note h2{font-size:24px;margin-bottom:10px}
+.note p{font-size:16.5px;color:#4b4630}
+footer{background:var(--g9);color:#b9d1c0;padding:50px 0 34px;font-size:15px}
+footer a{color:#e8f3eb;margin-right:18px}
+footer p{margin-top:14px;max-width:900px;line-height:1.6}
+@media(max-width:860px){.two,.grid,.steps{grid-template-columns:1fr}.two img{height:280px}.hero .wrap{padding-top:70px;padding-bottom:70px}section{padding:56px 0}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Plant<span>ora</span></a>
+<nav>
+<a href="#why">Why plants</a>
+<a href="#light">Light</a>
+<a href="#water">Watering</a>
+<a href="#beginner">Beginner plants</a>
+<a href="#problems">Problems</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap">
+<span class="tag">Indoor Plant Care Guide</span>
+<h1>Plantora: Grow Greener Spaces, One Healthy Plant at a Time</h1>
+<p>Plantora is an educational resource that explains indoor plant care in plain, practical language, from understanding light and water to choosing easy plants and solving common problems.</p>
+<a class="btn" href="#why">Start Reading the Guide</a>
+</div>
+</div>
+
+<section class="alt" id="why">
+<div class="wrap two">
+<div>
+<h2>Why Bring Plants Into Your Home?</h2>
+<p>Houseplants have been part of homes for centuries. Many people simply enjoy the look of living greenery: a trailing vine on a bookshelf, a tall leafy plant by a window, or a small pot of herbs on a kitchen sill. Caring for a plant also gives a gentle daily routine, a reason to pause, notice small changes and take care of something over time.</p>
+<p>Plantora was created to make that experience easier to start. Plant care can seem confusing at first because advice online is often contradictory. Here you will find clear explanations of the basic principles that apply to almost every indoor plant, so you can make confident decisions instead of following guesswork.</p>
+<p>Whether you live in a large house or a small apartment, there is a plant and a placement that can work for your space. The key is to learn what a plant needs and match it to the conditions you can realistically provide.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1000&q=70" alt="Young green seedlings growing in small pots" width="1000" height="420" loading="lazy">
+</div>
+</section>
+
+<section id="basics">
+<div class="wrap">
+<h2>The Four Basics of Plant Care</h2>
+<p class="lead">Almost every plant-care question comes back to four simple factors. Understanding them gives you a strong foundation for any plant you decide to grow.</p>
+<div class="steps">
+<div class="step"><h3>1. Light</h3><p>Plants use light to produce energy. Too little light leads to slow, stretched growth; too much direct sun can scorch leaves. Knowing how bright your room really is matters more than any other single decision.</p></div>
+<div class="step"><h3>2. Water</h3><p>Both overwatering and underwatering cause trouble. Most indoor plants prefer to be watered thoroughly and then allowed to dry slightly, rather than kept constantly wet.</p></div>
+<div class="step"><h3>3. Soil and Pot</h3><p>Roots need air as well as moisture. A well-draining potting mix and a container with drainage holes help prevent soggy conditions that can harm roots.</p></div>
+<div class="step"><h3>4. Environment</h3><p>Temperature, humidity and airflow all play a part. Most common houseplants do well in the same temperatures that are comfortable for people, away from cold drafts and direct heater vents.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="light">
+<div class="wrap two">
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1000&q=70" alt="Green leaves lit by soft natural light" width="1000" height="420" loading="lazy">
+<div>
+<h2>Understanding Light in Your Home</h2>
+<p>Light is the energy source for a plant, and it is usually described in three broad levels. <strong>Bright direct light</strong> means the sun's rays fall on the plant for several hours, as with a south-facing window in many regions. <strong>Bright indirect light</strong> means a well-lit spot where the sun does not strike the leaves directly, such as a few feet back from a window or beside an east-facing window. <strong>Low light</strong> describes rooms with small windows or areas far from any window.</p>
+<p>A simple test: hold your hand about a foot above the plant's position in the middle of the day. A sharp, clear shadow suggests strong light, a soft blurry shadow suggests medium light, and a faint shadow suggests low light. Note that "low light tolerant" does not mean "no light"; every plant needs some natural light to stay healthy, though some species adapt better than others.</p>
+<p>Plants lean toward the light source over time, so turning the pot a quarter turn every week or two helps growth stay even. Dust on leaves can also reduce the light they absorb, so wiping them gently with a damp cloth now and then is helpful.</p>
+</div>
+</div>
+</section>
+
+<section id="water">
+<div class="wrap">
+<h2>Watering: How Much and How Often</h2>
+<p class="lead">Watering mistakes are the most common reason indoor plants struggle. The good news is that a few habits make it much easier.</p>
+<div class="two" style="gap:48px">
+<div>
+<h3>Check the soil, not the calendar</h3>
+<p>There is no single schedule that suits every plant, because pot size, season, light and temperature all change how quickly soil dries. Instead of watering every Sunday, push a finger about an inch or two into the soil. If it feels damp, wait a day or two and check again. If it feels dry, it is usually time to water.</p>
+<h3>Water thoroughly</h3>
+<p>When you water, add enough that it runs out of the drainage holes, then empty the saucer after a short while. This encourages roots to grow deeper and helps flush out built-up minerals. Light, frequent sips tend to wet only the top layer of soil.</p>
+<h3>Watch for signs</h3>
+<p>Yellowing lower leaves and soft stems can point to too much water, while crispy brown edges and drooping that recovers after watering can suggest too little. Reading these signs helps you adjust over time.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=1000&q=70" alt="Potted houseplants arranged near a bright window" width="1000" height="420" loading="lazy">
+</div>
+</div>
+</section>
+
+<section class="dark" id="beginner">
+<div class="wrap">
+<h2>Easy Plants for Beginners</h2>
+<p class="lead">If you are new to plant care, starting with forgiving species builds confidence. These popular choices are widely known for tolerating a range of home conditions, though results always depend on your own space.</p>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=800&q=70" alt="Small succulents and cactus in pots" width="800" height="210" loading="lazy">
+<div><h3>Succulents and Cacti</h3><p>These store water in their leaves or stems, so they prefer bright light and infrequent watering. They suit sunny windowsills and people who sometimes forget to water.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=800&q=70" alt="Green indoor foliage plants in a living room" width="800" height="210" loading="lazy">
+<div><h3>Pothos and Similar Vines</h3><p>Trailing vines adapt well to medium light and are easy to propagate from cuttings in water. Allow the top of the soil to dry between waterings.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=800&q=70" alt="Lush green fern leaves" width="800" height="210" loading="lazy">
+<div><h3>Snake Plant and ZZ Plant</h3><p>Both handle lower light and irregular watering better than many other plants. They are often chosen for offices, hallways and rooms with limited sun.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="soil">
+<div class="wrap">
+<h2>Soil, Pots and Feeding</h2>
+<p class="lead">What your plant grows in is just as important as what you do above the surface.</p>
+<div class="two" style="align-items:start">
+<div>
+<h3>Choosing a potting mix</h3>
+<p>Garden soil is generally too heavy for containers. A purpose-made potting mix is lighter and drains better. Cacti and succulents do best in a gritty mix with added sand or perlite, while many leafy plants prefer a mix that holds a little more moisture but still drains freely.</p>
+<h3>Picking the right pot</h3>
+<p>Choose a container only slightly larger than the root ball, and always make sure it has drainage holes. If you love a decorative pot without holes, keep the plant in a plain nursery pot inside it and remove it for watering.</p>
+</div>
+<div>
+<h3>When to repot</h3>
+<p>Roots growing out of the drainage holes, water running straight through without soaking in, or growth that has stalled during the growing season are common signs a plant may need a larger pot. Spring is usually a good time to repot.</p>
+<h3>Feeding in moderation</h3>
+<p>Plants in pots slowly use up nutrients in the soil. A diluted, balanced houseplant fertiliser during spring and summer is enough for most species. Follow the instructions on the label, and avoid feeding in winter when growth slows down.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="problems">
+<div class="wrap">
+<h2>Common Plant Problems and What They May Mean</h2>
+<p class="lead">Plants communicate through their leaves. Here are a few common signs and the most likely explanations to consider first.</p>
+<div class="steps">
+<div class="step"><h3>Yellow leaves</h3><p>Often linked to overwatering or poor drainage, but can also come from low light or natural ageing of the oldest leaves. Check the soil moisture first.</p></div>
+<div class="step"><h3>Brown, crispy tips</h3><p>Usually related to dry air, irregular watering or a build-up of minerals from tap water. Try watering more evenly and flushing the soil occasionally.</p></div>
+<div class="step"><h3>Leggy, stretched growth</h3><p>This typically means the plant is reaching for more light. Move it closer to a window or rotate it regularly.</p></div>
+<div class="step"><h3>Small insects or sticky leaves</h3><p>Pests such as aphids, mealybugs or fungus gnats can appear on indoor plants. Isolate the plant, wipe leaves, and consider gentle treatments suited to the pest and plant type.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="seasons">
+<div class="wrap">
+<h2>Caring for Plants Through the Seasons</h2>
+<div class="two" style="align-items:start">
+<div>
+<p>Indoor plants respond to the changing seasons even in heated or cooled rooms. In spring and summer, longer days encourage active growth, so plants usually need more frequent watering and occasional feeding. This is also the best time to repot, prune and propagate.</p>
+<p>In autumn and winter, daylight shortens and growth slows. Plants use less water, so it is wise to let the soil dry a little more between waterings. Move plants away from cold window glass at night and from hot, dry air near heaters.</p>
+</div>
+<div>
+<p>In hot climates, strong afternoon sun can be intense even through glass. A sheer curtain can soften the light and protect leaves. During very humid or rainy periods, check that soil is not staying wet for too long and that air can circulate around the plants.</p>
+<p>The best approach is to observe. Your home has its own conditions, and noticing how your plants respond across the year will teach you more than any fixed rule.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="faq">
+<div class="wrap faq">
+<h2>Frequently Asked Questions</h2>
+<details><summary>What is Plantora?</summary><p>Plantora is an informational website that shares general guidance about caring for indoor plants. It is intended for education and inspiration.</p></details>
+<details><summary>How often should I water my houseplants?</summary><p>It depends on the plant, pot size, light and season. A good habit is to check whether the top inch or two of soil is dry before watering, rather than watering on a fixed schedule.</p></details>
+<details><summary>Can I grow plants in a room with little natural light?</summary><p>Some plants tolerate lower light better than others, but all need some light. If a room is very dim, a suitable grow lamp can help, or you can place plants near the brightest spot available.</p></details>
+<details><summary>Why are my plant's leaves turning yellow?</summary><p>Common causes include overwatering, poor drainage, low light or natural ageing. Check the soil and the plant's conditions before making changes.</p></details>
+<details><summary>Are all houseplants safe for pets and children?</summary><p>No. Some common houseplants can be harmful if chewed or swallowed. If you have pets or young children, research each plant before bringing it home and place plants out of reach. If you are concerned, contact a veterinarian or medical professional.</p></details>
+<details><summary>Does Plantora sell plants or products?</summary><p>No. This page is an educational guide and does not offer plants, products or services for sale.</p></details>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="note" id="disclaimer">
+<h2>Disclaimer</h2>
+<p>The content on this page is provided for general informational and educational purposes only. Plant care results vary with climate, indoor conditions, plant species and individual circumstances, and Plantora makes no guarantee of specific outcomes. Information here is not professional horticultural, veterinary, medical or safety advice. Some plants may be toxic to people or animals; always verify the safety of a plant before keeping it in your home. Images are used for illustration only. Any third-party names mentioned belong to their respective owners. By using this page you agree that you use the information at your own discretion and risk. For details, please read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms &amp; Conditions</a>.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<strong style="color:#fff;font-size:20px">Plantora</strong>
+<p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="#disclaimer">Disclaimer</a></p>
+<p>&copy; 2026 Plantora. All rights reserved. This website provides general educational information about indoor plant care and does not sell products or services.</p>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Plantora – A Practical Guide to Growing and Caring for Indoor Plants","description":"Educational guide to indoor plant care covering light, watering, soil, beginner plants, common problems and seasonal tips.","inLanguage":"en"}
+</script>
+</body>
+</html>
